@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="expressly">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Picture viewing application</title>
+    <link href="styles/bundle.css" rel="stylesheet">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="http://localhost:1337/#/"><img src="img/house.png"></a></li>
+			<li><a href="https://www.google.com" target="_blank"><img src="img/search.png"></a></li>
+		</ul>
+	</nav>
+
+	<div class="container" ng-view></div>
+
+	<footer>
+		<div class="footer">
+			<p>Maksym Gichka</p>
+			<a href="https://github.com/frontendinator/angular-browserify-seed" target="_blank">Link to the github fork</a>
+		</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+	<script src="js/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<h3 style="text-align: center;">
+		Photos of <span>{{alb[0].albumId}}</span>
+		<span> album</span>
+	</h3>
+<div class="albumitems">
+	<div class="photolistitem" ng-repeat="a in alb | limitTo : 102">
+		<a href="#/image/{{a.id}}"><img style="margin: 7px;" ng-src="{{a.thumbnailUrl}}"></a>
+	</div>
+</div>

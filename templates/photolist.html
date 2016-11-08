@@ -1,0 +1,10 @@
+<div ng-controller="startController">
+	<h1>Photos</h1>
+	<ul class="mainphotolist">
+		<li class="photolistitem" ng-repeat="photo in photos  | limitTo : 102">
+			<p>{{photo.id}} from <a href="#/album/{{photo.albumId}}"><span>Album {{photo.albumId}}</span></a></p>
+			<a href="#/image/{{photo.id}}"><img ng-src="{{photo.thumbnailUrl}}"></a>
+			<p>{{photo.title}}</p>
+		</li>
+	</ul>
+</div>
